@@ -42,21 +42,20 @@ const cities = [
     "london",
     "nashville",
     "sevilla",
-    "canary island"
+    "canary island",
+    "canada",
+    "canada"
 
 ];
 
 const logMostOcurrenciesCities = (numCities) => {
-    return [... new Set(cities)].map(x => {
-        return {
-            name: x,
-            times: cities.filter(y => y === x).length
-        };
-    })
+    return [... new Set(cities)].map(x => ({
+        name: x,
+        times: cities.filter(y => y === x).length
+    }))
         .sort((a, b) => b.times - a.times)
         .slice(0, numCities)
         .map(x => x.name);
-
-}
+};
 
 console.log(logMostOcurrenciesCities(5));
