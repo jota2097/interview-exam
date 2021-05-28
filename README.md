@@ -1,6 +1,6 @@
 # interview-exam
 
-#Problems
+# Problems
 
 
 /**
@@ -21,7 +21,8 @@
  * Write a function that logs the 5 cities that ocurre the most in the array below in
  * order from the most number of occurences to least.
  */
-for run file
+
+# For run file
 
 npm install -g ts-node typescript
 node interviewExam.ts
